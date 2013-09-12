@@ -1885,9 +1885,7 @@ cc.Node = cc.Class.extend(/** @lends cc.Node# */{
                 this._transform = cc.AffineTransformConcat(this._transform, this._additionalTransform);
                 this._additionalTransformDirty = false;
             }
-
-            t.tx = t.tx | 0;
-            t.ty = t.ty | 0;
+            
             this._transformDirty = false;
         }
         return this._transform;
