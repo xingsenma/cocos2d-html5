@@ -509,7 +509,7 @@ ccs.UIWidget = ccs.Class.extend(/** @lends ccs.UIWidget# */{
      */
     ignoreContentAdaptWithSize: function (ignore) {
         this._ignoreSize = ignore;
-        var locSize = this.getContentSize();
+        var locSize;
         if (this._ignoreSize) {
             locSize = this.getContentSize();
         }
